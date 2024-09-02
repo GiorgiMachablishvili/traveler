@@ -9,6 +9,13 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+    private lazy var titleLabel: UILabel = {
+        let view = UILabel(frame: .zero)
+        view.numberOfLines = 0
+        view.text = "Bottom Traveler"
+        view.textAlignment = .center
+        return view
+    }()
     
     private lazy var nameLabel: UILabel = {
         let view = UILabel(frame: .zero)
@@ -22,17 +29,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .green
+        
         setup()
         layout()
-        
-        view.backgroundColor = .white
     }
     
-    func setup() {
+    private func setup() {
+        view.addSubview(titleLabel)
         view.addSubview(nameLabel)
     }
     
-    func layout() {
+    private func layout() {
+        titleLabel.snp.remakeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-20)
+        }
+        
         nameLabel.snp.remakeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
             make.leading.trailing.equalToSuperview().inset(20)

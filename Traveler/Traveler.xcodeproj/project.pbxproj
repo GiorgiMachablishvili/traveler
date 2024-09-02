@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFB679122C86193A000C23F5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CFB679112C86193A000C23F5 /* SnapKit */; };
+		CFB679142C86193A000C23F5 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CFB679132C86193A000C23F5 /* SnapKit-Dynamic */; };
 		E363D1292C860EC200F23FD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E363D1282C860EC200F23FD2 /* AppDelegate.swift */; };
 		E363D12B2C860EC200F23FD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E363D12A2C860EC200F23FD2 /* SceneDelegate.swift */; };
 		E363D12D2C860EC200F23FD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E363D12C2C860EC200F23FD2 /* ViewController.swift */; };
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				E363D1412C86192400F23FD2 /* SnapKit in Frameworks */,
 				E363D1432C86192400F23FD2 /* SnapKit-Dynamic in Frameworks */,
 			);
@@ -88,6 +91,7 @@
 			);
 			name = Traveler;
 			packageProductDependencies = (
+
 				E363D1402C86192400F23FD2 /* SnapKit */,
 				E363D1422C86192400F23FD2 /* SnapKit-Dynamic */,
 			);
@@ -120,6 +124,7 @@
 			);
 			mainGroup = E363D11C2C860EC200F23FD2;
 			packageReferences = (
+
 				E363D13F2C86192400F23FD2 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = E363D1262C860EC200F23FD2 /* Products */;
@@ -364,6 +369,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+
 		E363D13F2C86192400F23FD2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -375,6 +381,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+
 		E363D1402C86192400F23FD2 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E363D13F2C86192400F23FD2 /* XCRemoteSwiftPackageReference "SnapKit" */;
